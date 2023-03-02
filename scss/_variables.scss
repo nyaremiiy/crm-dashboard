@@ -13,14 +13,18 @@ $c-text-red-inactive: #DF0404;
 $c-bg-red-inactive: #FFC5C5;
 $c-silver-dark: #838383;
 $c-silver-light: #9197B3;
-$c-icon-default: #9197B3;
+$c-menu-text-def: #9197B3;
 $c-select-purple:#5932EA;
 $c-position:#757575;
 // FONT-SIZE
 $fs-base: 16;
 // TRANSITION
-$t-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+$t-normal: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 // BOX-SHADOW
 $bs-normal: 3px 4px 7px rgba($c-black, 0.1);
 //  FONT-FAMILY
 $ff-base: 'Poppins';
+
+:root {
+  --c-menu-text-def: #9197B3;
+}

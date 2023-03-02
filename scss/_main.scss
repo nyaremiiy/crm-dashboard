@@ -19,10 +19,11 @@ input {
   outline: none;
   border: none;
 }
-img, svg {
+img,
+svg {
   width: 100%;
 }
-p{
+p {
   margin: 0;
   padding: 0;
 }
@@ -43,4 +44,9 @@ h6 {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+}
+.active-menu {
+  background-color: #5932ea;
+  --c-menu-text-def: #fff;
+  box-shadow: none;
 }

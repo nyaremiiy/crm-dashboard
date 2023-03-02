@@ -309,6 +309,10 @@ template {
   display: none;
 }
 
+:root {
+  --c-menu-text-def: #9197B3;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -335,7 +339,8 @@ input {
   border: none;
 }
 
-img, svg {
+img,
+svg {
   width: 100%;
 }
 
@@ -362,6 +367,12 @@ h6 {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+}
+
+.active-menu {
+  background-color: #5932ea;
+  --c-menu-text-def: #fff;
+  box-shadow: none;
 }
 
 .sidebar {
@@ -402,8 +413,49 @@ h6 {
   margin-left: 4px;
 }
 
-.item:hover .item__icon svg path {
-  stroke: white;
+.menu {
+  flex-direction: column;
+  margin-top: 35px;
+  margin-left: 8px;
+  display: flex;
+  gap: 18px;
+}
+
+.item {
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+  color: var(--c-menu-text-def);
+  cursor: pointer;
+  transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
+  border-radius: 8px;
+  padding: 11px;
+  display: flex;
+  gap: 14px;
+}
+.item:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.item__icon {
+  display: flex;
+}
+.item__icon svg {
+  width: 24px;
+  aspect-ratio: 1/1;
+}
+.item__text {
+  letter-spacing: -0.01em;
+  line-height: 21px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.item__arrow {
+  width: 16px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  right: 8px;
+  top: 15px;
 }
 
 body {
