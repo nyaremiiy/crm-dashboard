@@ -1,0 +1,11 @@
+.item:hover {
+  .item {
+    &__icon {
+      svg {
+        path {
+          stroke: white;
+        }
+      }
+    }
+  }
+}
