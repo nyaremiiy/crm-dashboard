@@ -2,7 +2,8 @@
   background-color: $c-white;
   min-height: 100vh;
   max-width: 306px;
-  padding: 20px;
-  display: block;
+  padding: 20px 20px 20px 28px;
+  flex-direction: column;
+  display: flex;
   height: 100%;
 }
