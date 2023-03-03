@@ -1,0 +1,24 @@
+.btnSidebar {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-color: $c-select-purple;
+  border-radius: 50%;
+  top: 38px;
+  right: -16px;
+  transition: $t-normal;
+  &__arrow {
+    cursor: pointer;
+    svg {
+      width: 18px;
+      display: flex;
+    }
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &:active {
+    scale: 0.9;
+  }
+}

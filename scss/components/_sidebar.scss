@@ -1,9 +1,17 @@
 .sidebar {
   background-color: $c-white;
+  overflow-y: auto;
+  overflow-y: visible;
   min-height: 100vh;
   max-width: 306px;
   padding: 20px 20px 20px 28px;
   flex-direction: column;
+  transition: $t-normal;
   display: flex;
   height: 100%;
+  position: relative;
+  &--close {
+    max-width: 107px;
+    padding: 20px;
+  }
 }

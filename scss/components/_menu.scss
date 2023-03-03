@@ -32,6 +32,9 @@
     line-height: 21px;
     font-weight: 500;
     font-size: 14px;
+    &--close {
+      opacity: 0;
+    }
   }
   &__arrow {
     width: 16px;
