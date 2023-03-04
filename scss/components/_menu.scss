@@ -1,6 +1,6 @@
 .menu {
   flex-direction: column;
-  margin-top: 35px;
+  margin-top: clamp(0.313rem, -0.049rem + 1.81vw, 2.188rem);
   display: flex;
   gap: 18px;
 }

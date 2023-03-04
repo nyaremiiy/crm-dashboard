@@ -377,7 +377,6 @@ h6 {
 
 .sidebar {
   background-color: #fff;
-  overflow-y: auto;
   overflow-y: visible;
   min-height: 100vh;
   max-width: 306px;
@@ -387,6 +386,7 @@ h6 {
   display: flex;
   height: 100%;
   position: relative;
+  z-index: 10;
 }
 .sidebar--close {
   max-width: 107px;
@@ -431,7 +431,7 @@ h6 {
 
 .menu {
   flex-direction: column;
-  margin-top: 35px;
+  margin-top: clamp(0.313rem, -0.049rem + 1.81vw, 2.188rem);
   display: flex;
   gap: 18px;
 }
@@ -479,7 +479,7 @@ h6 {
 .user {
   align-items: center;
   margin-top: auto;
-  margin-bottom: 56px;
+  margin-bottom: clamp(0.313rem, -0.302rem + 3.07vw, 3.5rem);
   cursor: pointer;
   display: flex;
   gap: 12px;
@@ -528,6 +528,7 @@ h6 {
   top: 38px;
   right: -16px;
   transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: rotate(-180deg);
 }
 .btnSidebar__arrow {
   cursor: pointer;

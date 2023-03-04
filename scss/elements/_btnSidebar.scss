@@ -7,6 +7,7 @@
   top: 38px;
   right: -16px;
   transition: $t-normal;
+  transform: rotate(-180deg);
   &__arrow {
     cursor: pointer;
     svg {

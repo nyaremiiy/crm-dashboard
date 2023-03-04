@@ -1,7 +1,7 @@
 .user {
   align-items: center;
   margin-top: auto;
-  margin-bottom: 56px;
+  margin-bottom: clamp(0.313rem, -0.302rem + 3.07vw, 3.5rem);
   cursor: pointer;
   display: flex;
   gap: 12px;
