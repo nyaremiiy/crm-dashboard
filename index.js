@@ -47,7 +47,7 @@ function closeSidebar () {
   const widthScreen = window.innerWidth;
   
   if(widthScreen <= 768) {
-    closeItemsMenu();
+    addClassesForSidebar();
   }
 }
 closeSidebar();
